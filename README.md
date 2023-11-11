@@ -9,7 +9,7 @@
 ```
 npm install
 ```
-Register commands in discord api ***(First you have to create the bot in [Discord Developers Documentation](https://discord.com/developers/docs/intro))***
+Register commands in discord api ***(First you have to create the bot in [[Discord Developer Portal](https://discord.com/developers/applications))***
 
 ```
 node deploy-commands.js
