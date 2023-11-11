@@ -9,11 +9,6 @@
 ```
 npm install
 ```
-Register commands in discord api ***(First you have to create the bot in [[Discord Developer Portal](https://discord.com/developers/applications))***
-
-```
-node deploy-commands.js
-```
 
 ## Guide / Usage
 
@@ -21,6 +16,12 @@ Change the config.example.json with the keys and ids that its needed.
  - You will need get an OpenAI Api key: **[OpenAI Api Keys](https://platform.openai.com/api-keys)**
  - You will need to create a discord bot: **[Discord Developers Docs](https://discord.com/developers/docs/intro)**
  - Get your discord id and discord key from your developer page: **[Discord Developer Portal](https://discord.com/developers/applications)**
+
+Register commands in discord api ***(First you have to create the bot in [[Discord Developer Portal](https://discord.com/developers/applications))***
+
+```
+node deploy-commands.js
+```
 
 ## Notes
 
