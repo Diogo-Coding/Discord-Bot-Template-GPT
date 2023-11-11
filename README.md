@@ -9,6 +9,11 @@
 ```
 npm install
 ```
+Register commands in discord api ***(First you have to create the bot in [Discord Developers Documentation](https://discord.com/developers/docs/intro))***
+
+```
+node deploy-commands.js
+```
 
 ## Guide / Usage
 

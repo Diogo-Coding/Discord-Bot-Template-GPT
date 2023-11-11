@@ -1,3 +1,6 @@
+// THIS CODE ITS TO SET THE COMMANDS TO THE DISCORD BOT, EACH TIME YOU CREATE A NEW COMMAND YOU HAVE TO SEND IT TO THE DISCORD API
+// TO REGISTER THE COMMANDS YOU HAVE TO RUN THE FOLLOWING:
+// --> node deploy-commands.js
 const { REST, Routes } = require('discord.js');
 const { clientId, guildId, token } = require('./config.json');
 const fs = require('node:fs');

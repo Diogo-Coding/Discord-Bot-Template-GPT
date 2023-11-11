@@ -1,7 +1,7 @@
 const fs = require('node:fs')
 const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const { clientId, guildId, token } = require('./config.json');
+const { token } = require('./config.json');
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 client.commands = new Collection()
@@ -31,16 +31,16 @@ client.once(Events.ClientReady, c => {
 client.on(Events.InteractionCreate, async interaction => {
 	if (!interaction.isChatInputCommand()) return;
 
-  // Busca el comando por su nombre
+  // Search the command by the chat input prompt command
 	const command = interaction.client.commands.get(interaction.commandName);
 
-  // Si no hay comando hace return y para
+  // If the comand is incorrect stop
 	if (!command) {
 		console.error(`No command matching ${interaction.commandName} was found.`);
 		return;
 	}
 
-  // En caso contrario
+  // If it was a command
 	try {
 		await command.execute(interaction);
 	} catch (error) {
