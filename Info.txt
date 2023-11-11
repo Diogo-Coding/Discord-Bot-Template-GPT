@@ -1,3 +1,0 @@
-Para hacer un comando visible solo para el usuario que lo ejecuta:
-
-await interaction.reply({ content: '', ephemeral: true});

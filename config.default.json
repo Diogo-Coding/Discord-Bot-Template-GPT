@@ -1,0 +1,6 @@
+{
+	"token": "discord token",
+	"clientId": "bot id",
+	"guildId": "discord server id",
+	"gpt": "openai-key"
+}

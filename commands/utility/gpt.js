@@ -1,8 +1,9 @@
 const fetch = require('node-fetch');
 const { SlashCommandBuilder } = require('discord.js');
 const { OpenAI } = require("openai");
+const { gpt } = require('../../config.json');
 
-const apiKey = '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';
+const apiKey = gpt;
 const openai = new OpenAI({ apiKey: `${apiKey}` });
 
 module.exports = {
@@ -15,6 +16,10 @@ module.exports = {
         .setRequired(true)),
   async execute(interaction) {
     const message = interaction.options.getString('message');
+
+    // HACER CHATS POR PERSONA
+    // IDEA DE HACER CHATS GRUPALES Y CREAR CONVERSACIONES DE VARIAS PERSONAS
+    // AÑADIR AL COMANDO OPTION DE PROMPT DEFAULT
     
     try {
       // Enviar una respuesta provisional y almacenarla en una variable
